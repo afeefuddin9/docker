@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update \
-    && apt install python
+RUN apt-get update -y \
+    && apt install python -y
 COPY . .
-CMD [ "/hello.py" ]
+CMD [ "python", "/hello.py" ]
